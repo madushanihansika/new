@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>		
+	<head>
+		<meta name="viewport" content = "width=device-width , initial-scale=1">
+		<title>Chess Game Play</title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="css/chessStyle.css" type="text/css">
+	</head>
+	<body onload="bRook1();">
+
+	<div class="container">
+		<h1>Chess Game</h1>
+
+			<div class="row">
+				<div class="col-md-2 ">8</div>
+				<div class="col-md-1 black" id="1G1"><img id="black1" class="groupBlack" src="image/blackRook.png" onclick=""></div>
+				<div class="col-md-1 white" id="1G2"><img id="black2" class="groupBlack" src="image/blackKnight.png"></div>
+				<div class="col-md-1 black" id="1G3"><img id="black3" class="groupBlack" src="image/blackBishop.png"></div>
+				<div class="col-md-1 white" id="1G4"><img id="black4" class="groupBlack" src="image/blackQueen.png"></div>
+				<div class="col-md-1 black" id="1G5"><img id="black5" class="groupBlack" src="image/balckKing.png"></div>
+				<div class="col-md-1 white" id="1G6"><img id="black6" class="groupBlack" src="image/blackBishop.png"></div>
+				<div class="col-md-1 black" id="1G7"><img id="black7" class="groupBlack" src="image/blackKnight.png"></div>
+				<div class="col-md-1 white" id="1G8"><img id="black8" class="groupBlack" src="image/blackRook.png"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">7</div>
+				<div class="col-md-1 white" id="2G1"><img id="b1" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 black" id="2G2"><img id="b2" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 white" id="2G3"><img id="b3" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 black" id="2G4"><img id="b4" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 white" id="2G5"><img id="b5" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 black" id="2G6"><img id="b6" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 white" id="2G7"><img id="b7" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-1 black" id="2G8"><img id="b8" class="groupBlack" src="image/blackpone.png"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">6</div>
+				<div class="col-md-1 black" id="3G1"></div>
+				<div class="col-md-1 white" id="3G2"></div>
+				<div class="col-md-1 black" id="3G3"></div>
+				<div class="col-md-1 white" id="3G4"></div>
+				<div class="col-md-1 black" id="3G5"></div>
+				<div class="col-md-1 white" id="3G6"></div>
+				<div class="col-md-1 black" id="3G7"></div>
+				<div class="col-md-1 white" id="3G8"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">5</div>
+				<div class="col-md-1 white" id="4G1"></div>
+				<div class="col-md-1 black" id="4G2"></div>
+				<div class="col-md-1 white" id="4G3"></div>
+				<div class="col-md-1 black" id="4G4"></div>
+				<div class="col-md-1 white" id="4G5"></div>
+				<div class="col-md-1 black" id="4G6"></div>
+				<div class="col-md-1 white" id="4G7"></div>
+				<div class="col-md-1 black" id="4G8"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">4</div>
+				<div class="col-md-1 black" id="5G1"></div>
+				<div class="col-md-1 white" id="5G2"></div>
+				<div class="col-md-1 black" id="5G3"></div>
+				<div class="col-md-1 white" id="5G4"></div>
+				<div class="col-md-1 black" id="5G5"></div>
+				<div class="col-md-1 white" id="5G6"></div>
+				<div class="col-md-1 black" id="5G7"></div>
+				<div class="col-md-1 white" id="5G8"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">3</div>
+				<div class="col-md-1 white" id="6G1"></div>
+				<div class="col-md-1 black" id="6G2"></div>
+				<div class="col-md-1 white" id="6G3"></div>
+				<div class="col-md-1 black" id="6G4"></div>
+				<div class="col-md-1 white" id="6G5"></div>
+				<div class="col-md-1 black" id="6G6"></div>
+				<div class="col-md-1 white" id="6G7"></div>
+				<div class="col-md-1 black" id="6G8"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">2</div>
+				<div class="col-md-1 black" id="7G1"><img id="w1" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 white" id="7G2"><img id="w2" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 black" id="7G3"><img id="w3" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 white" id="7G4"><img id="w4" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 black" id="7G5"><img id="w5" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 white" id="7G6"><img id="w6" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 black" id="7G7"><img id="w7" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-1 white" id="7G8"><img id="w8" class="groupWhite" src="image/whitepore.png"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 ">1</div>
+				<div class="col-md-1 white" id="8G1"><img id="white1" class="groupWhite" src="image/whiteRook.png"></div>
+				<div class="col-md-1 black" id="8G2"><img id="white2" class="groupWhite" src="image/whiteKnight.png"></div>
+				<div class="col-md-1 white" id="8G3"><img id="white3" class="groupWhite" src="image/whiteBishop.png"></div>
+				<div class="col-md-1 black" id="8G4"><img id="white4" class="groupWhite" src="image/whiteQueen.png"></div>
+				<div class="col-md-1 white" id="8G5"><img id="white5" class="groupWhite" src="image/whiteKing.png"></div>
+				<div class="col-md-1 black" id="8G6"><img id="white6" class="groupWhite" src="image/whiteBishop.png"></div>
+				<div class="col-md-1 white" id="8G7"><img id="white7" class="groupWhite" src="image/whiteKnight.png"></div>
+				<div class="col-md-1 black" id="8G8"><img id="white8" class="groupWhite" src="image/whiteRook.png"></div>
+				<div class="col-md-2 "></div>
+			</div>
+
+			<div class="row" id="footerBoard">
+				<div class="col-md-2"></div>
+				<div class="col-md-1 ">A</div>
+				<div class="col-md-1 ">B</div>
+				<div class="col-md-1 ">C</div>
+				<div class="col-md-1 ">D</div>
+				<div class="col-md-1 ">E</div>
+				<div class="col-md-1 ">F</div>
+				<div class="col-md-1 ">G</div>
+				<div class="col-md-1 ">H</div>
+				<div class="col-md-2"></div>
+			</div>
+
+		</div>
+
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/indexStyle.js"></script>
+		<br>
+		<br>
+	<footer> <center> Copyright @ 2017 , Chees Game Play , All rights reserved ....</center> </footer>
+
+		<!--<script>-->
+
+            <!--function clickPiece() {-->
+                <!--alert("omload wada");-->
+            <!--}-->
+		<!--</script>-->
+	</body>
+</html>	

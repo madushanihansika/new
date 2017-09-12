@@ -1,0 +1,74 @@
+.black{
+    width: 80px;
+    height: 80px;
+    background-image: url("../image/blackBoard.jpg");
+}
+.white{
+    width: 80px;
+    height: 80px;
+    background-image: url("../image/whiteBoard.jpg");
+}
+body{
+    background-image:url(../image/backgroundImage.jpg);
+}
+#footerBoard{
+    position: relative;
+    left: 40px;
+    font-size: 20px;
+    width: 980px;
+}
+footer{
+    padding: 3px;
+    text-align: left;
+    color: white;
+    font-style: inherit;
+    background-color: darkkhaki;
+}
+#header{
+    font-size: 12px;
+    width: 90px;
+    height: 20px;
+    background-color: white;
+}
+.white:hover{
+    box-shadow: inset 0px 0px 20px 2px #0000ff;
+}
+.black:hover{
+    box-shadow: inset 0px 0px 20px 2px #0000ff;
+}
+.col-md-2{
+    text-align: right;
+    font-size: 20px;
+    align-items: center;
+}
+.groupBlack{
+    width: 65px;
+    height: 65px;
+    align-items: center;
+}
+.groupWhite{
+    width: 65px;
+    height: 65px;
+    align-items: center;
+}
+.higlightedBoxes{
+    -webkit-box-shadow: inset 0px 0px 6px 1px #3399ff;
+    -moz-box-shadow: inset 0px 0px 6px 1px #3399ff;
+    box-shadow: inset 0px 0px 6px 1px #3399ff;
+
+    background: -webkit-radial-gradient(rgba(0,255,0,1),rgba(0,0,255,0));
+    background: -moz-radial-gradient(rgba(0,255,0,1),rgba(0,0,255,0));
+    background: -o-radial-gradient(rgba(0,255,0,1),rgba(0,0,255,0));
+    background: radial-gradient(rgba(0,255,0,1),rgba(0,0,255,0));
+
+}
+.enemyBoxes{
+    box-shadow: inset 0px 0px 6px 1px #ff0000;
+
+    background: -webkit-radial-gradient(rgba(255,0,0,1),rgba(255,0,0,0));
+    background: -moz-radial-gradient(rgba(255,0,0,1),rgba(255,0,0,0));
+    background: -o-radial-gradient(rgba(255,0,0,1),rgba(255,0,0,0));
+    background: radial-gradient(rgba(255,0,0,1),rgba(255,0,0,0));
+}
+
+
