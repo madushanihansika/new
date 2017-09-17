@@ -1,0 +1,84 @@
+body{
+    background-image: url(../image/backgroundImage.jpg);
+}
+#contain{
+    /*background-color: brown;*/
+    background-image: url(../image/imageBorder.jpg);
+    height: 700px;
+    width: 675px;
+}
+#topic{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+#title{
+    border: white;
+}
+#header{
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.topic-image{
+    height: 123px;
+    width: 123px;
+}
+.col-xs-1{
+    height: 70px;
+    width: 70px;
+}
+#audio{
+    position: inherit;
+}
+#footer{
+    color: white;
+    top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.img{
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    left: 6px;
+    top: 5px;
+    z-index: 9999;
+}
+.img:hover{
+    position: absolute;
+    height: 60px;
+    width: 65px;
+    left: 4px;
+    top: 5px;
+    z-index: 9999;
+}
+footer{
+    padding: 5px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: inherit;
+    background-color: black;
+}
+
+.selectPath{
+    box-shadow: inset 0px 0px 6px 10px rgba(589,233,859, .8);
+}
+.clickpiece{
+    box-shadow: inset 0px 0px 6px 10px rgba(896,788,578, .8);
+}
+.white{
+    background-image: url(../image/whiteBoard.jpg);
+}
+.black{
+    background-image: url(../image/blackBoard.jpg);
+}
+.cross{
+    box-shadow: inset 0px 0px 6px 10px red;
+}

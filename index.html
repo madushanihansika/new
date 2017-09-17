@@ -1,148 +1,164 @@
 <!DOCTYPE html>
-<html>		
-	<head>
-		<meta name="viewport" content = "width=device-width , initial-scale=1">
-		<title>Chess Game Play</title>
-		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-		<link rel="stylesheet" href="css/chessStyle.css" type="text/css">
-	</head>
-	<body onload="bRook1();">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <title>Chess Game</title>
+</head>
+<body>
+<div class="row">
+    <div id="topic"><img class="topic-image" src="image/topic.png">Chess Game</div>
 
-	<div class="container">
-		<h1>Chess Game</h1>
+    <div class="col-xs-3" id="title">
+        <div class="row" id="sco">
+            <h1 id="header">
+                <button type="submit">Play Now...</button>
+            </h1>
+        </div>
+    </div>
 
-			<div class="row">
-				<div class="col-md-2 ">8</div>
-				<div class="col-md-1 black" id="1G1"><img id="black1" class="groupBlack" src="image/blackRook.png" onclick=""></div>
-				<div class="col-md-1 white" id="1G2"><img id="black2" class="groupBlack" src="image/blackKnight.png"></div>
-				<div class="col-md-1 black" id="1G3"><img id="black3" class="groupBlack" src="image/blackBishop.png"></div>
-				<div class="col-md-1 white" id="1G4"><img id="black4" class="groupBlack" src="image/blackQueen.png"></div>
-				<div class="col-md-1 black" id="1G5"><img id="black5" class="groupBlack" src="image/balckKing.png"></div>
-				<div class="col-md-1 white" id="1G6"><img id="black6" class="groupBlack" src="image/blackBishop.png"></div>
-				<div class="col-md-1 black" id="1G7"><img id="black7" class="groupBlack" src="image/blackKnight.png"></div>
-				<div class="col-md-1 white" id="1G8"><img id="black8" class="groupBlack" src="image/blackRook.png"></div>
-				<div class="col-md-2 "></div>
-			</div>
+    <div>
+        <label id="date" name="date" />
+    </div>
 
-			<div class="row">
-				<div class="col-md-2 ">7</div>
-				<div class="col-md-1 white" id="2G1"><img id="b1" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 black" id="2G2"><img id="b2" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 white" id="2G3"><img id="b3" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 black" id="2G4"><img id="b4" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 white" id="2G5"><img id="b5" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 black" id="2G6"><img id="b6" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 white" id="2G7"><img id="b7" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-1 black" id="2G8"><img id="b8" class="groupBlack" src="image/blackpone.png"></div>
-				<div class="col-md-2 "></div>
-			</div>
+    <div class="col-xs-9" id="contain">
+        <div class="row">
 
-			<div class="row">
-				<div class="col-md-2 ">6</div>
-				<div class="col-md-1 black" id="3G1"></div>
-				<div class="col-md-1 white" id="3G2"></div>
-				<div class="col-md-1 black" id="3G3"></div>
-				<div class="col-md-1 white" id="3G4"></div>
-				<div class="col-md-1 black" id="3G5"></div>
-				<div class="col-md-1 white" id="3G6"></div>
-				<div class="col-md-1 black" id="3G7"></div>
-				<div class="col-md-1 white" id="3G8"></div>
-				<div class="col-md-2 "></div>
-			</div>
+            <br><br><br><br>
 
-			<div class="row">
-				<div class="col-md-2 ">5</div>
-				<div class="col-md-1 white" id="4G1"></div>
-				<div class="col-md-1 black" id="4G2"></div>
-				<div class="col-md-1 white" id="4G3"></div>
-				<div class="col-md-1 black" id="4G4"></div>
-				<div class="col-md-1 white" id="4G5"></div>
-				<div class="col-md-1 black" id="4G6"></div>
-				<div class="col-md-1 white" id="4G7"></div>
-				<div class="col-md-1 black" id="4G8"></div>
-				<div class="col-md-2 "></div>
-			</div>
+            <div class="row" id="row1">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">1</span></div>
+                <div class="col-xs-1 root1 black" id="A1"><img class="img piece" id="1J1" src="image/blackRook.png"></div>
+                <div class="col-xs-1 root1 white" id="B1"><img class="img piece" id="1J2" src="image/blackKnight.png"></div>
+                <div class="col-xs-1 root1 black" id="C1"><img class="img piece" id="1J3" src="image/blackBishop.png"></div>
+                <div class="col-xs-1 root1 white" id="D1"><img class="img piece" id="1J4" src="image/blackQueen.png"></div>
+                <div class="col-xs-1 root1 black" id="E1"><img class="img piece" id="1J5" src="image/balckKing.png"></div>
+                <div class="col-xs-1 root1 white" id="F1"><img class="img piece" id="1J6" src="image/blackBishop.png"></div>
+                <div class="col-xs-1 root1 black" id="G1"><img class="img piece" id="1J7" src="image/blackKnight.png"></div>
+                <div class="col-xs-1 root1 white" id="H1"><img class="img piece" id="1J8" src="image/blackRook.png"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-			<div class="row">
-				<div class="col-md-2 ">4</div>
-				<div class="col-md-1 black" id="5G1"></div>
-				<div class="col-md-1 white" id="5G2"></div>
-				<div class="col-md-1 black" id="5G3"></div>
-				<div class="col-md-1 white" id="5G4"></div>
-				<div class="col-md-1 black" id="5G5"></div>
-				<div class="col-md-1 white" id="5G6"></div>
-				<div class="col-md-1 black" id="5G7"></div>
-				<div class="col-md-1 white" id="5G8"></div>
-				<div class="col-md-2 "></div>
-			</div>
+            <div class="row" id="row2">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">2</span></div>
+                <div class="col-xs-1 root white" id="A2"><img class="img piece poneBlack" id="2J1" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root black" id="B2"><img class="img piece poneBlack" id="2J2" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root white" id="C2"><img class="img piece poneBlack" id="2J3" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root black" id="D2"><img class="img piece poneBlack" id="2J4" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root white" id="E2"><img class="img piece poneBlack" id="2J5" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root black" id="F2"><img class="img piece poneBlack" id="2J6" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root white" id="G2"><img class="img piece poneBlack" id="2J7" src="image/blackpone.png"></div>
+                <div class="col-xs-1 root black" id="H2"><img class="img piece poneBlack" id="2J8" src="image/blackpone.png"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-			<div class="row">
-				<div class="col-md-2 ">3</div>
-				<div class="col-md-1 white" id="6G1"></div>
-				<div class="col-md-1 black" id="6G2"></div>
-				<div class="col-md-1 white" id="6G3"></div>
-				<div class="col-md-1 black" id="6G4"></div>
-				<div class="col-md-1 white" id="6G5"></div>
-				<div class="col-md-1 black" id="6G6"></div>
-				<div class="col-md-1 white" id="6G7"></div>
-				<div class="col-md-1 black" id="6G8"></div>
-				<div class="col-md-2 "></div>
-			</div>
+            <div class="row" id="row3">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">3</span></div>
+                <div class="col-xs-1 root black" id="A3"></div>
+                <div class="col-xs-1 root white" id="B3"></div>
+                <div class="col-xs-1 root black" id="C3"></div>
+                <div class="col-xs-1 root white" id="D3"></div>
+                <div class="col-xs-1 root black" id="E3"></div>
+                <div class="col-xs-1 root white" id="F3"></div>
+                <div class="col-xs-1 root black" id="G3"></div>
+                <div class="col-xs-1 root white" id="H3"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-			<div class="row">
-				<div class="col-md-2 ">2</div>
-				<div class="col-md-1 black" id="7G1"><img id="w1" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 white" id="7G2"><img id="w2" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 black" id="7G3"><img id="w3" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 white" id="7G4"><img id="w4" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 black" id="7G5"><img id="w5" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 white" id="7G6"><img id="w6" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 black" id="7G7"><img id="w7" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-1 white" id="7G8"><img id="w8" class="groupWhite" src="image/whitepore.png"></div>
-				<div class="col-md-2 "></div>
-			</div>
+            <div class="row" id="row4">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">4</span></div>
+                <div class="col-xs-1 root white" id="A4"></div>
+                <div class="col-xs-1 root black" id="B4"></div>
+                <div class="col-xs-1 root white" id="C4"></div>
+                <div class="col-xs-1 root black" id="D4"></div>
+                <div class="col-xs-1 root white" id="E4"></div>
+                <div class="col-xs-1 root black" id="F4"></div>
+                <div class="col-xs-1 root white" id="G4"></div>
+                <div class="col-xs-1 root black" id="H4"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-			<div class="row">
-				<div class="col-md-2 ">1</div>
-				<div class="col-md-1 white" id="8G1"><img id="white1" class="groupWhite" src="image/whiteRook.png"></div>
-				<div class="col-md-1 black" id="8G2"><img id="white2" class="groupWhite" src="image/whiteKnight.png"></div>
-				<div class="col-md-1 white" id="8G3"><img id="white3" class="groupWhite" src="image/whiteBishop.png"></div>
-				<div class="col-md-1 black" id="8G4"><img id="white4" class="groupWhite" src="image/whiteQueen.png"></div>
-				<div class="col-md-1 white" id="8G5"><img id="white5" class="groupWhite" src="image/whiteKing.png"></div>
-				<div class="col-md-1 black" id="8G6"><img id="white6" class="groupWhite" src="image/whiteBishop.png"></div>
-				<div class="col-md-1 white" id="8G7"><img id="white7" class="groupWhite" src="image/whiteKnight.png"></div>
-				<div class="col-md-1 black" id="8G8"><img id="white8" class="groupWhite" src="image/whiteRook.png"></div>
-				<div class="col-md-2 "></div>
-			</div>
+            <div class="row" id="row5">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">5</span></div>
+                <div class="col-xs-1 root black" id="A5"></div>
+                <div class="col-xs-1 root white" id="B5"></div>
+                <div class="col-xs-1 root black" id="C5"></div>
+                <div class="col-xs-1 root white" id="D5"></div>
+                <div class="col-xs-1 root black" id="E5"></div>
+                <div class="col-xs-1 root white" id="F5"></div>
+                <div class="col-xs-1 root black" id="G5"></div>
+                <div class="col-xs-1 root white" id="H5"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-			<div class="row" id="footerBoard">
-				<div class="col-md-2"></div>
-				<div class="col-md-1 ">A</div>
-				<div class="col-md-1 ">B</div>
-				<div class="col-md-1 ">C</div>
-				<div class="col-md-1 ">D</div>
-				<div class="col-md-1 ">E</div>
-				<div class="col-md-1 ">F</div>
-				<div class="col-md-1 ">G</div>
-				<div class="col-md-1 ">H</div>
-				<div class="col-md-2"></div>
-			</div>
+            <div class="row" id="row6">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">6</span></div>
+                <div class="col-xs-1 root white" id="A6"></div>
+                <div class="col-xs-1 root black" id="B6"></div>
+                <div class="col-xs-1 root white" id="C6"></div>
+                <div class="col-xs-1 root black" id="D6"></div>
+                <div class="col-xs-1 root white" id="E6"></div>
+                <div class="col-xs-1 root black" id="F6"></div>
+                <div class="col-xs-1 root white" id="G6"></div>
+                <div class="col-xs-1 root black" id="H6"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-		</div>
+             <div class="row" id="row7">
+                 <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">7</span></div>
+                 <div class="col-xs-1 root black" id="A7"><img class="img piece poneWhite" id="3J1" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root white" id="B7"><img class="img piece poneWhite" id="3J2" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root black" id="C7"><img class="img piece poneWhite" id="3J3" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root white" id="D7"><img class="img piece poneWhite" id="3J4" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root black" id="E7"><img class="img piece poneWhite" id="3J5" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root white" id="F7"><img class="img piece poneWhite" id="3J6" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root black" id="G7"><img class="img piece poneWhite" id="3J7" src="image/whitepore.png"></div>
+                 <div class="col-xs-1 root white" id="H7"><img class="img piece poneWhite" id="3J8" src="image/whitepore.png"></div>
+                 <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+             </div>
 
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/indexStyle.js"></script>
-		<br>
-		<br>
-	<footer> <center> Copyright @ 2017 , Chees Game Play , All rights reserved ....</center> </footer>
+            <div class="row" id="row8">
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span class="number">8</span></div>
+                <div class="col-xs-1 root white" id="A8"><img class="img piece" id="4J1" src="image/whiteRook.png"></div>
+                <div class="col-xs-1 root black" id="B8"><img class="img piece" id="4J2" src="image/whiteKnight.png"></div>
+                <div class="col-xs-1 root white" id="C8"><img class="img piece" id="4J3" src="image/whiteBishop.png"></div>
+                <div class="col-xs-1 root black" id="D8"><img class="img piece" id="4J4" src="image/whiteQueen.png"></div>
+                <div class="col-xs-1 root white" id="E8"><img class="img piece" id="4J5" src="image/whiteKing.ico"></div>
+                <div class="col-xs-1 root black" id="F8"><img class="img piece" id="4J6" src="image/whiteBishop.png"></div>
+                <div class="col-xs-1 root white" id="G8"><img class="img piece" id="4J7" src="image/whiteKnight.png"></div>
+                <div class="col-xs-1 root black" id="H8"><img class="img piece" id="4J8" src="image/whiteRook.png"></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
 
-		<!--<script>-->
+            <div class="row">
+                <div class="col-xs-1" id="footer" style="text-align: center;color: black;font-weight: bold"><span></span></div>
+                <div class="col-xs-1"><span>A</span></div>
+                <div class="col-xs-1"><span>B</span></div>
+                <div class="col-xs-1"><span>C</span></div>
+                <div class="col-xs-1"><span>D</span></div>
+                <div class="col-xs-1"><span>E</span></div>
+                <div class="col-xs-1"><span>F</span></div>
+                <div class="col-xs-1"><span>G</span></div>
+                <div class="col-xs-1"><span>H</span></div>
+                <div class="col-xs-1" style="text-align: center;color: black; font-weight: bold"><span></span></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-            <!--function clickPiece() {-->
-                <!--alert("omload wada");-->
-            <!--}-->
-		<!--</script>-->
-	</body>
-</html>	
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/indexController.js"></script>
+
+<audio autoplay loop controls id="audio">
+<source src="audio/audioGame.mp4">
+</audio>
+
+<br><br>
+<footer> <center> Copyright @ 2017 , Chess Game Play , All right reserved ....</center></footer>
+
+</body>
+</html>
